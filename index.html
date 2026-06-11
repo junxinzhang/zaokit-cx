@@ -4,40 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zaokit AI Services — 企业级 AI 基础设施与合规接入服务</title>
+  <title>Zaokit Codex API 服务 - 企业级、可开票的 OpenAI 合规接入方案</title>
   <meta name="description"
-    content="Zaokit 为企业提供一站式 AI 基础设施服务：Token Hub 算力统管平台、Claude API 合规接入、OpenAI / Codex API 服务。支持私有化部署、可开具增值税发票，让企业安心用 AI。">
-  <meta name="keywords" content="Zaokit, AI基础设施, Token Hub, Claude API, OpenAI API, 企业AI, 私有化部署, 增值税发票, API接入, 算力管理">
+    content="Zaokit 提供正规商业渠道的 OpenAI / Codex API 整合优化服务。支持 GPT-5.5 / GPT-4o / o3 / o1 等全系列模型，提供企业级高并发与高可用专线，支持开具正规增值税发票，解决企业在技术采购、合规与报销上的痛点。">
+  <meta name="keywords" content="OpenAI API, ChatGPT 接入, Codex API, 企业级 AI, 大模型 API 接入, OpenAI 发票, 增值税专票, 商业级 API, API 网络加速">
   <meta name="author" content="Zaokit AI">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="Zaokit AI Services">
-  <meta property="og:title" content="Zaokit AI Services — 企业级 AI 基础设施与合规接入服务">
-  <meta property="og:description" content="一站式企业 AI 基础设施：算力统管、API 合规接入、私有化部署。">
-  <meta property="og:url" content="https://cx.zaokit.com">
+  <meta property="og:site_name" content="Zaokit Codex API">
+  <meta property="og:title" content="Zaokit Codex API 服务 - 企业级、可开票的 OpenAI 合规接入方案">
+  <meta property="og:description" content="Zaokit 提供正规商业渠道的 OpenAI API 接入与网络加速服务，支持对公结算与增值税发票开具。">
 
-  <meta name="theme-color" content="#06091a">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0a0e1a">
   <link rel="stylesheet" href="./css/style.css">
 
   <script defer src="https://cloud.umami.is/script.js" data-website-id="3a3a912f-5afa-46d1-b5da-b5f0828ed9af"></script>
 </head>
 
 <body>
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
-  <a class="skip-link" href="#main-content" data-i18n="skip">跳到正文</a>
+  <a class="skip-link" href="#main-content">跳到正文</a>
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" data-i18n-aria="brand.aria" aria-label="Zaokit 主页">
+      <a class="brand" href="#top" aria-label="Zaokit 主页">
         <span class="brand-mark">ZAO</span>
         <span class="brand-text">Zaokit AI Services</span>
       </a>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" data-i18n-aria="menu.aria" aria-label="打开导航菜单">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="打开导航菜单">
         <span></span>
         <span></span>
         <span></span>
@@ -45,355 +40,326 @@
 
       <nav class="site-nav" aria-label="主导航">
         <ul class="nav-links" id="nav-links">
-          <li><a href="#hero" data-i18n="nav.home">首页</a></li>
-          <li><a href="#products" data-i18n="nav.products">产品矩阵</a></li>
-          <li><a href="#why" data-i18n="nav.why">为什么选我们</a></li>
-          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-          <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">联系我们</a></li>
-          <li><button id="lang-switch" class="lang-switch" type="button" onclick="I18N.switchLang()">EN</button></li>
+          <li><a href="#hero">首页</a></li>
+          <li><a href="#advantages">核心优势</a></li>
+          <li><a href="#pricing">计费方案</a></li>
+          <li><a href="#features">功能特性</a></li>
+          <li><a href="#process">接入流程</a></li>
+          <li><a href="#faq">常见问题</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-
-    <!-- ════════ HERO ════════ -->
     <section class="hero" id="hero">
       <div class="container hero-grid">
         <div class="hero-content fade-in">
-          <p class="hero-eyebrow" data-i18n="hero.eyebrow">⚡ 企业级 AI 基础设施 · 一站式服务</p>
-          <h1><span data-i18n="hero.h1.line1">让企业用 AI，</span><br>
-            <span data-i18n="hero.h1.line2">像用水电一样简单。</span>
+          <p class="hero-eyebrow">正规商务渠道 · 企业级合规接入</p>
+          <h1>解锁 OpenAI 的强大能力，
+            <span>解决合规与报销痛点。</span>
           </h1>
-          <p class="hero-desc" data-i18n="hero.desc">
-            Zaokit 提供从算力统管、API 合规接入到私有化部署的完整 AI 基础设施。不管你是要给全员接 AI、还是要在生产环境跑大模型，我们都有成熟方案——可开票、可审计、可落地。
+          <p class="hero-desc">
+            Zaokit 为企业级用户与全球化团队提供高性能、高可用的 OpenAI / Codex API 接入与加速服务。100% 兼容官方接口协议，支持全系列模型。最重要的是：我们提供对公结算并开具正规增值税发票。
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#products" id="hero-cta-primary" data-i18n="hero.cta.primary">探索产品</a>
-            <a class="btn btn-secondary" href="#contact" id="hero-cta-secondary" data-i18n="hero.cta.secondary">联系咨询</a>
+            <a class="btn btn-primary" href="#contact">联系客户经理</a>
+            <a class="btn btn-secondary" href="#pricing">查看计费方案</a>
           </div>
           <div class="hero-meta">
-            <span data-i18n="hero.meta.deploy">支持私有化部署</span>
-            <span data-i18n="hero.meta.invoice">可开票 · ToB 合规</span>
+            <span>支持开具增值税专票/普票</span>
+            <span>包含 GPT-5.5 / GPT-4o / o3 / o1</span>
           </div>
         </div>
 
-        <aside class="hero-visual fade-in" style="transition-delay: 0.15s">
-          <div class="hub-diagram float-anim">
-            <div class="hub-diagram-inner">
-              <div class="hub-node hub-node-team" data-i18n="hero.visual.team">🏢 你的企业</div>
-              <div class="hub-connector"></div>
-              <div class="hub-node hub-node-hub pulse-glow"><span data-i18n="hero.visual.hub">🔌 Zaokit AI</span><br><small data-i18n="hero.visual.hub.sub">统一接入 · 统一管控 · 统一计费</small></div>
-              <div class="hub-connector"></div>
-              <div class="hub-upstream-row">
-                <div class="hub-node hub-node-upstream"><span data-i18n="hero.visual.tokenhub">Token Hub</span><br><small data-i18n="hero.visual.tokenhub.sub">算力统管</small></div>
-                <div class="hub-node hub-node-upstream"><span data-i18n="hero.visual.claude">Claude API</span><br><small data-i18n="hero.visual.claude.sub">合规接入</small></div>
-                <div class="hub-node hub-node-upstream"><span data-i18n="hero.visual.openai">OpenAI API</span><br><small data-i18n="hero.visual.openai.sub">Codex 加速</small></div>
-              </div>
-            </div>
-          </div>
+        <aside class="hero-card fade-in" style="transition-delay: 0.15s">
+          <h2>为什么企业选择我们</h2>
+          <ul>
+            <li>
+              <strong>合规无忧的财务流程</strong>
+              <span>告别个人代付与非合规渠道，签订正规商务合同，公对公转账，提供合规发票，让财务审计不再头疼。</span>
+            </li>
+            <li>
+              <strong>原生级别的开发体验</strong>
+              <span>API 请求结构与 OpenAI 官方完全一致，只需修改 Base URL 和 API Key 即可无缝切换，无需重写现有代码。</span>
+            </li>
+            <li>
+              <strong>企业级的稳定保障</strong>
+              <span>多重路由、并发隔离池与故障转移机制，保障高频调用场景下的极速响应与可用性。</span>
+            </li>
+          </ul>
         </aside>
       </div>
     </section>
 
-    <!-- ════════ STATS ════════ -->
     <section class="stats-bar fade-in">
       <div class="container stats-grid">
         <div class="stat-item">
-          <h3 data-count-to="3" data-count-suffix=" 大产品" data-i18n-suffix="stat.products">0 大产品</h3>
-          <p data-i18n="stat.products.label">覆盖完整 AI 基础设施</p>
+          <h3 data-count-to="99.9" data-count-suffix="%">0%</h3>
+          <p>SLA 承诺可用性</p>
         </div>
         <div class="stat-item">
-          <h3 data-count-to="99.9" data-count-suffix="%" data-count-decimal="1">0%</h3>
-          <p data-i18n="stat.uptime.label">高可用保障</p>
+          <h3 data-count-to="280" data-count-suffix="ms">0ms</h3>
+          <p>首字响应延迟</p>
         </div>
         <div class="stat-item">
           <h3 data-count-to="100" data-count-suffix="%">0%</h3>
-          <p data-i18n="stat.invoice.label">合规可开票</p>
+          <p>API 兼容性</p>
         </div>
         <div class="stat-item">
-          <h3 data-count-to="1" data-count-suffix=" 天" data-i18n-suffix="stat.delivery">0 天</h3>
-          <p data-i18n="stat.delivery.label">最快交付上线</p>
+          <h3 data-count-to="24" data-count-suffix="H">0H</h3>
+          <p>技术支持响应</p>
         </div>
       </div>
     </section>
 
-    <!-- ════════ PRODUCTS ════════ -->
-    <section class="section" id="products">
+    <section class="section" id="advantages">
       <div class="container">
         <div class="section-head fade-in">
-          <p class="section-tag" data-i18n="products.tag">产品矩阵</p>
-          <h2 data-i18n="products.title">三大产品，覆盖企业 AI 落地全场景</h2>
-          <p class="section-desc" data-i18n="products.desc">无论你是要管好 AI 算力、接入 Claude、还是用上 OpenAI 全系列模型，Zaokit 都有对应产品。点击了解详情。</p>
-        </div>
-
-        <div class="product-grid">
-
-          <!-- Token Hub -->
-          <a href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener" class="product-card product-card-featured fade-in" id="product-tokenhub">
-            <div class="product-badge" data-i18n="product.th.badge">旗舰产品</div>
-            <div class="product-icon">🔌</div>
-            <h3 data-i18n="product.th.name">AI Token Hub</h3>
-            <p class="product-tagline" data-i18n="product.th.tagline">企业 AI 算力的总闸与电表</p>
-            <p class="product-desc" data-i18n="product.th.desc">
-              把 AI 算力当水电一样统一计量、统一分配、统一管控。Token Hub 是你公司 AI 算力的第一块总闸——所有人经过它来用 AI，成本清清楚楚，权限安安全全。
-            </p>
-            <ul class="product-features">
-              <li data-i18n="product.th.f1">支持私有化部署，数据不出门</li>
-              <li data-i18n="product.th.f2">号池优先 + API 兜底，双保障</li>
-              <li data-i18n="product.th.f3">接入 AWS Bedrock / Google Vertex / Azure</li>
-              <li data-i18n="product.th.f4">FDE 陪跑，最快 1 天交付</li>
-            </ul>
-            <span class="product-link" data-i18n="product.th.link">
-              了解 Token Hub →
-            </span>
-          </a>
-
-          <!-- CC - Claude API -->
-          <a href="https://cc.zaokit.com" target="_blank" rel="noopener" class="product-card fade-in" style="transition-delay: 0.1s" id="product-cc">
-            <div class="product-icon product-icon-purple">🤖</div>
-            <h3 data-i18n="product.cc.name">Zaokit CC · Claude API</h3>
-            <p class="product-tagline" data-i18n="product.cc.tagline">企业级 Claude 合规接入</p>
-            <p class="product-desc" data-i18n="product.cc.desc">
-              高性能、高可用的 Claude API 代理服务。100% 兼容 Anthropic 官方接口协议，支持 Claude 4.7 Opus / Sonnet / Haiku 全系列模型。
-            </p>
-            <ul class="product-features">
-              <li data-i18n="product.cc.f1">支持 Claude 4.7 全系列模型</li>
-              <li data-i18n="product.cc.f2">多账号池负载均衡，突破 Tier 限制</li>
-              <li data-i18n="product.cc.f3">对公结算，可开增值税专票/普票</li>
-              <li data-i18n="product.cc.f4">只需修改 Base URL 即可切换</li>
-            </ul>
-            <span class="product-link" data-i18n="product.cc.link">
-              了解 Claude API →
-            </span>
-          </a>
-
-          <!-- CX - OpenAI / Codex API -->
-          <a href="https://cx.zaokit.com" class="product-card fade-in" style="transition-delay: 0.2s" id="product-cx">
-            <div class="product-icon product-icon-green">⚡</div>
-            <h3 data-i18n="product.cx.name">Zaokit CX · Codex API</h3>
-            <p class="product-tagline" data-i18n="product.cx.tagline">企业级 OpenAI 合规接入</p>
-            <p class="product-desc" data-i18n="product.cx.desc">
-              正规商业渠道的 OpenAI / Codex API 接入与加速服务。支持 GPT-5.5 / GPT-4o / o3 / o1 全系列模型，解决企业合规与报销痛点。
-            </p>
-            <ul class="product-features">
-              <li data-i18n="product.cx.f1">GPT-5.5 / GPT-4o / o3 / o1 全系列</li>
-              <li data-i18n="product.cx.f2">优化专线直连，首字 280ms 响应</li>
-              <li data-i18n="product.cx.f3">对公结算，可开增值税专票/普票</li>
-              <li data-i18n="product.cx.f4">支持 LangChain / LlamaIndex 无缝集成</li>
-            </ul>
-            <span class="product-link" data-i18n="product.cx.link">
-              了解 Codex API →
-            </span>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════ WHY US ════════ -->
-    <section class="section section-alt" id="why">
-      <div class="container">
-        <div class="section-head fade-in">
-          <p class="section-tag" data-i18n="why.tag">为什么选我们</p>
-          <h2 data-i18n="why.title">我们和卖 API Key 的不一样</h2>
-          <p class="section-desc" data-i18n="why.desc">Zaokit 不是中间商，是你企业 AI 基础设施的施工队。我们做的事，是让 AI 在你公司里真正「通电」。</p>
+          <p class="section-tag">核心优势</p>
+          <h2>专为 B2B 场景打造的接入体验</h2>
         </div>
         <div class="card-grid card-grid-3">
           <article class="card fade-in">
             <div class="card-icon">📄</div>
-            <h3 data-i18n="why.tob.title">天生 ToB，合规到底</h3>
-            <p data-i18n="why.tob.desc">合同、发票、对公结算、审计留痕——从第一天起就是产品的一部分，不是事后补丁。支持开具 6% 增值税专用发票。</p>
+            <h3>阳光财务与合规</h3>
+            <p>全流程透明合法。支持先签订采购合同后对公打款，根据实际开票抬头开具增值税专用/普通发票，扫清企业在技术采购与合规记账上的财务阻碍。</p>
           </article>
           <article class="card fade-in" style="transition-delay: 0.1s">
-            <div class="card-icon">🏠</div>
-            <h3 data-i18n="why.private.title">私有化交付</h3>
-            <p data-i18n="why.private.desc">Token Hub 可以直接私有化部署在你的环境，数据不出门。连「从我这儿过」都不放心？直接给你私有化。</p>
+            <div class="card-icon">⚡</div>
+            <h3>极速稳定的网络层</h3>
+            <p>通过优化的全球加速专线直连官方 API 节点。自动化的多账号池负载均衡，有效避免单一账号触发并发限制（Rate Limits）导致的请求失败。</p>
           </article>
           <article class="card fade-in" style="transition-delay: 0.2s">
-            <div class="card-icon">🛠️</div>
-            <h3 data-i18n="why.fde.title">FDE 陪跑落地</h3>
-            <p data-i18n="why.fde.desc">我们不是卖完就走。FDE 带着方案下场，陪你把系统真正跑起来。需求摸底、部署上线、接入调试到持续运营。</p>
-          </article>
-          <article class="card fade-in" style="transition-delay: 0.15s">
-            <div class="card-icon">⚡</div>
-            <h3 data-i18n="why.network.title">极速稳定的网络层</h3>
-            <p data-i18n="why.network.desc">优化的全球加速专线直连模型厂商节点。多账号池负载均衡，有效避免并发限制导致的请求失败。</p>
-          </article>
-          <article class="card fade-in" style="transition-delay: 0.25s">
             <div class="card-icon">🔒</div>
-            <h3 data-i18n="why.security.title">数据安全与隐私</h3>
-            <p data-i18n="why.security.desc">坚守不记录、不缓存任何 prompt 及生成内容的底线。所有数据直达模型厂商或在你内网处理。</p>
-          </article>
-          <article class="card fade-in" style="transition-delay: 0.35s">
-            <div class="card-icon">🔗</div>
-            <h3 data-i18n="why.multicloud.title">多云多模型支持</h3>
-            <p data-i18n="why.multicloud.desc">OpenAI、Anthropic、Google Gemini 全覆盖。可通过 AWS Bedrock、Google Vertex AI、Azure 网关接入。</p>
+            <h3>数据安全与隐私</h3>
+            <p>作为透明中转加速层，我们坚守不记录、不缓存任何 prompt 及生成内容的底线。您的所有对话数据安全传输至官方模型接口，满足企业级隐私合规要求。</p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="analogy-banner fade-in" style="margin-top:48px">
-          <div>
-            <h3 data-i18n="why.banner.title">我们自己先走过这条路</h3>
-            <p id="why-banner-desc">我们自己就是从「各买各的 Pro」一路走过来的。踩过的坑、算过的账、调过的参数都是一手的。<a href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener" style="color:var(--primary-strong)">tokenhub.zaokit.ai</a>、<a href="https://cc.zaokit.com" target="_blank" rel="noopener" style="color:var(--primary-strong)">cc.zaokit.com</a>、<a href="https://cx.zaokit.com" target="_blank" rel="noopener" style="color:var(--primary-strong)">cx.zaokit.com</a> 这些 ToB 服务底座上已经在真实跑着的东西。</p>
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        <div class="section-head fade-in">
+          <p class="section-tag">计费方案</p>
+          <h2>透明、灵活的充值模式</h2>
+          <p class="section-desc">按 Token 消耗实时计费，无隐形费用，无月租。汇率透明，充值金额永不过期。</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="card pricing-card fade-in">
+            <h3>基础起步</h3>
+            <div class="price">¥1,000<span class="price-unit"> /次</span></div>
+            <p class="price-note">适合小型团队与测试验证</p>
+            <ul>
+              <li>按实际 Token 消耗扣费</li>
+              <li>提供增值税普通发票</li>
+              <li>基础并发配额</li>
+              <li>工作日邮件支持</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">选择方案</a>
+          </article>
+
+          <article class="card pricing-card featured fade-in pulse-glow" style="transition-delay: 0.1s">
+            <div class="pricing-badge">最受欢迎</div>
+            <h3>企业标准</h3>
+            <div class="price">¥5,000<span class="price-unit"> /次</span></div>
+            <p class="price-note">适合规模化生产环境部署</p>
+            <ul>
+              <li>按实际 Token 消耗扣费</li>
+              <li>提供增值税专用/普通发票</li>
+              <li>专属高并发独立通道</li>
+              <li>优先技术支持响应</li>
+              <li>专属客户经理跟进</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="width: 100%; margin-top: 10px;">联系采购</a>
+          </article>
+
+          <article class="card pricing-card fade-in" style="transition-delay: 0.2s">
+            <h3>定制大客户</h3>
+            <div class="price">¥20,000+<span class="price-unit"></span></div>
+            <p class="price-note">超大并发与特殊业务需求</p>
+            <ul>
+              <li>阶梯优惠折扣费率</li>
+              <li>签订年度框架协议</li>
+              <li>私有化独占节点配置</li>
+              <li>7x24 小时紧急响应</li>
+              <li>技术专家驻场支持可选</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">定制方案</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head fade-in">
+          <p class="section-tag">接入流程</p>
+          <h2>4 步完成合规接入</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step fade-in">
+            <h3>1. 需求确认与测试</h3>
+            <p>联系我们提供基本业务场景，获取少量免费测试额度和接口文档，验证兼容性与速度。</p>
           </div>
-          <div class="analogy-badge">
-            <span>🏭</span>
-            <span data-i18n="why.banner.badge">实战出品</span>
+          <div class="process-step fade-in" style="transition-delay: 0.1s">
+            <h3>2. 商务合同签署</h3>
+            <p>确认采购方案后，双方签署服务采购合同。明确服务等级与合规开票细节。</p>
+          </div>
+          <div class="process-step fade-in" style="transition-delay: 0.2s">
+            <h3>3. 对公打款与开票</h3>
+            <p>企业对公账户转账，款项确认后我们即刻开具对应的增值税发票并邮寄/发送电子版。</p>
+          </div>
+          <div class="process-step fade-in" style="transition-delay: 0.3s">
+            <h3>4. 获取 Key 并上线</h3>
+            <p>发放正式生产环境的 API Key 和专属 Endpoint，您的系统即可稳定调用大模型能力。</p>
+          </div>
+        </div>
+
+        <div class="invoice-banner fade-in" style="margin-top: 48px;">
+          <div>
+            <h3>关于开票的重要说明</h3>
+            <p>Zaokit 开具的是正规且合法的服务类目发票。无论是技术服务费还是软件咨询费，均支持开具 6% 的增值税专用发票（一般纳税人可抵扣）或增值税普通发票。扫除由于“非正规渠道支付”和“个人转账”带来的企业财务与税务风险隐患。
+            </p>
+          </div>
+          <div class="invoice-badge">
+            <span>🧾</span>
+            <span>合规抵扣</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ════════ FAQ ════════ -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-head fade-in">
+          <p class="section-tag">功能特性</p>
+          <h2>专为开发者与工程团队准备</h2>
+        </div>
+        <div class="features-wrap">
+          <ul class="feature-list fade-in">
+            <li>支持 GPT-5.5 / GPT-4o / o3 / o1 全系列模型</li>
+            <li>完美支持 Server-Sent Events (SSE) 流式输出响应</li>
+            <li>支持 Function Calling (工具调用) 与 Vision 多模态输入</li>
+            <li>通过统一计费面板实时监控 Token 消耗及账单情况</li>
+            <li>支持 LangChain / LlamaIndex 等主流开发框架无缝集成</li>
+            <li>接口级防重放攻击与基础 CC 防护</li>
+          </ul>
+          <div class="feature-panel fade-in" style="transition-delay: 0.15s">
+            <h3>极简的代码集成</h3>
+            <p>如果您已经在使用官方 SDK（如 Python 或 Node.js），只需修改 Base URL 和 API Key 即可：</p>
+            <p
+              style="margin-top: 12px; font-family: monospace; background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; font-size: 0.85rem; color: #a5d6ff;">
+              import openai<br><br>
+              client = openai.OpenAI(<br>
+              &nbsp;&nbsp;api_key="zaokit-YOUR-KEY",<br>
+              &nbsp;&nbsp;base_url="https://api.zaokit.com/v1"<br>
+              )
+            </p>
+            <p class="panel-note">无任何学习成本，即插即用。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="faq">
       <div class="container faq-wrap">
         <div class="section-head fade-in">
-          <p class="section-tag" data-i18n="faq.tag">FAQ</p>
-          <h2 data-i18n="faq.title">常见问题解答</h2>
+          <p class="section-tag">FAQ</p>
+          <h2>常见问题解答</h2>
         </div>
 
         <div class="faq-list">
-          <article class="faq-item fade-in" id="faq-1">
+          <article class="faq-item fade-in">
             <button class="faq-question" aria-expanded="false">
-              <span data-i18n="faq.1.q">Token Hub 和 API 代理服务有什么区别？</span>
+              <span>Q1：你们的计费标准和官方一样吗？</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq.1.a">API 代理服务（CC / CX）解决的是「怎么接上」的问题——让你的系统能合规、稳定地调用 Claude 或 OpenAI 的模型。Token Hub 解决的是「怎么管好」的问题——把公司所有人的 AI 算力统一计量、统一分配、统一管控。前者是水管，后者是水表和总闸。</p>
+              <p>我们按照模型官方公开的 Token 定价进行计算，由于我们需要承担专线网络成本、发票税费以及账号池维护成本，综合费率会有一定的溢价。具体报价请联系客户经理获取最新的阶梯价格表。</p>
             </div>
           </article>
 
-          <article class="faq-item fade-in" id="faq-2">
+          <article class="faq-item fade-in">
             <button class="faq-question" aria-expanded="false">
-              <span data-i18n="faq.2.q">可以只用其中一个产品吗？</span>
+              <span>Q2：支持 Anthropic Claude 接口吗？</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq.2.a">当然可以。三个产品完全独立，按需选用。只需要 Claude API 代理？用 CC。只要 OpenAI？用 CX。想要统管全公司 AI 算力？上 Token Hub。也可以组合使用，Token Hub 作为统一入口对接 CC 和 CX。</p>
+              <p>支持。我们同样提供 Anthropic Claude 全系列模型（如 Claude 3.5 Sonnet / Claude 3 Opus / Haiku 等）的合规接入服务，且共用同一套额度和计费系统，让您的多模型混用策略更易管理。</p>
             </div>
           </article>
 
-          <article class="faq-item fade-in" id="faq-3">
+          <article class="faq-item fade-in">
             <button class="faq-question" aria-expanded="false">
-              <span data-i18n="faq.3.q">能开发票吗？支持什么类型？</span>
+              <span>Q3：调用会有并发（RPM/TPM）限制吗？</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq.3.a">所有产品都支持。我们从第一天起就是 ToB 的，支持开具 6% 增值税专用发票（一般纳税人可抵扣）和增值税普通发票。对公结算、正规合同，扫除企业财务合规风险。</p>
+              <p>基础方案会有软性的并发限流机制以保障整体稳定性。如果是企业级客户，我们会分配专属的账号池资源，可以突破官方默认的 Tier 限制，满足高并发生产环境需求。</p>
             </div>
           </article>
 
-          <article class="faq-item fade-in" id="faq-4">
+          <article class="faq-item fade-in">
             <button class="faq-question" aria-expanded="false">
-              <span data-i18n="faq.4.q">私有化部署需要什么条件？</span>
+              <span>Q4：如果中途遇到官方账号不可抗力异常，我的余额与使用会受影响吗？</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq.4.a">Token Hub 支持完全私有化部署。你只需要提供基本的服务器环境，我们的 FDE 团队会全程陪跑完成部署。最快 1 天即可上线。不需要额外的技术团队，我们负责搭建、调试、上线全过程。</p>
-            </div>
-          </article>
-
-          <article class="faq-item fade-in" id="faq-5">
-            <button class="faq-question" aria-expanded="false">
-              <span data-i18n="faq.5.q">数据安全怎么保障？</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq.5.a">API 代理层不记录、不缓存任何 prompt 和对话内容。私有化部署的 Token Hub 所有数据在你自己的环境里跑，不经过任何第三方。调用日志和用量数据完全在你的管控下。</p>
-            </div>
-          </article>
-
-          <article class="faq-item fade-in" id="faq-6">
-            <button class="faq-question" aria-expanded="false">
-              <span data-i18n="faq.6.q">支持哪些模型？</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq.6.a">覆盖主流大模型：OpenAI 全系列（GPT-5.5 / GPT-4o / o3 / o1）、Anthropic Claude 全系列（Claude 4.7 Opus / Sonnet / Haiku）、Google Gemini 等。通过云网关还可接入 AWS Bedrock、Google Vertex AI、Azure OpenAI 上的所有可用模型。</p>
+              <p>这是我们作为企业服务商提供的核心价值之一：我们负责屏蔽与维护底层的接入稳定性。任何接口层面的账号及网络异常均由我们通过多集群路由和冗余资源自动处理，对您的调用透明且无感，您的余额永远安全有效。</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ════════ CTA ════════ -->
     <section class="section cta fade-in" id="contact">
       <div class="container cta-inner">
-        <h2 data-i18n="cta.title">准备好为你的企业引入 AI 基础设施了吗？</h2>
-        <p data-i18n="cta.desc">告别各买各的 Pro、散落的发票和说不清的成本。立即联系我们，获取适配你公司的 AI 落地方案。</p>
+        <h2>准备好为您的企业引入顶级 AI 能力了吗？</h2>
+        <p>告别繁琐的账号注册与支付障碍，建立合规透明的财务通道。立即联系我们获取测试额度及专属采购方案。</p>
         <div class="cta-actions">
-          <button class="btn btn-primary" onclick="openContactModal('email')" id="cta-email" data-i18n="cta.email">发送邮件咨询</button>
-          <button class="btn btn-secondary" onclick="openContactModal('wechat')" id="cta-wechat" data-i18n="cta.wechat">添加微信沟通</button>
+          <a class="btn btn-primary" href="mailto:jason2023zhang@gmail.com">发送邮件咨询</a>
+          <button class="btn btn-secondary" onclick="alert('微信添加：winnielove2020（请备注：Codex咨询）')">添加微信沟通</button>
         </div>
       </div>
     </section>
-
-    <!-- ════════ Contact Modal ════════ -->
-    <div class="modal-overlay" id="contact-modal" aria-hidden="true">
-      <div class="modal-card">
-        <button class="modal-close" onclick="closeContactModal()" data-i18n-aria="modal.close.aria" aria-label="关闭">&times;</button>
-        <h3 class="modal-title" data-i18n="modal.title">📬 联系我们</h3>
-        <p class="modal-desc" data-i18n="modal.desc">选择您方便的联系方式，我们会在 24 小时内回复。</p>
-
-        <div class="modal-contact-item" id="modal-email-item">
-          <div class="modal-contact-icon">📧</div>
-          <div class="modal-contact-info">
-            <span class="modal-contact-label" data-i18n="modal.email.label">邮箱</span>
-            <span class="modal-contact-value" id="contact-email-text">jason2023zhang@gmail.com</span>
-          </div>
-          <button class="modal-copy-btn" onclick="copyAndSend('email')" id="modal-email-btn">
-            <span class="copy-text" data-i18n="modal.email.btn">复制并发送</span>
-            <span class="copy-done" style="display:none" data-i18n="modal.email.done">✓ 已复制</span>
-          </button>
-        </div>
-
-        <div class="modal-contact-item" id="modal-wechat-item">
-          <div class="modal-contact-icon">💬</div>
-          <div class="modal-contact-info">
-            <span class="modal-contact-label" data-i18n="modal.wechat.label">微信号（请备注：Zaokit 咨询）</span>
-            <span class="modal-contact-value" id="contact-wechat-text">winnielove2020</span>
-          </div>
-          <button class="modal-copy-btn" onclick="copyText('wechat')" id="modal-wechat-btn">
-            <span class="copy-text" data-i18n="modal.wechat.btn">复制微信号</span>
-            <span class="copy-done" style="display:none" data-i18n="modal.wechat.done">✓ 已复制</span>
-          </button>
-        </div>
-
-        <p class="modal-footer-note" data-i18n="modal.hours">工作时间：9:00 ~ 23:00</p>
-      </div>
-    </div>
-
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <p class="footer-brand" data-i18n="footer.brand">Zaokit AI Services</p>
-        <p class="footer-note" data-i18n="footer.note">企业级 AI 基础设施一站式服务商。算力统管、API 合规接入、私有化部署，让企业安心用 AI。</p>
+        <p class="footer-brand">Zaokit AI Services</p>
+        <p class="footer-note">专注为企业提供安全、稳定、可开票的全球顶尖 AI 大模型 API 接入与网络优化方案。</p>
       </div>
       <div>
-        <h3 class="footer-title" data-i18n="footer.products">产品</h3>
+        <h3 class="footer-title">快速导航</h3>
         <ul class="footer-list">
-          <li><a href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener" data-i18n="footer.products.th">AI Token Hub · 算力统管</a></li>
-          <li><a href="https://cc.zaokit.com" target="_blank" rel="noopener" data-i18n="footer.products.cc">Zaokit CC · Claude API</a></li>
-          <li><a href="https://cx.zaokit.com" target="_blank" rel="noopener" data-i18n="footer.products.cx">Zaokit CX · Codex API</a></li>
+          <li><a href="#advantages">核心优势</a></li>
+          <li><a href="#pricing">计费方案</a></li>
+          <li><a href="#features">功能特性</a></li>
+          <li><a href="#faq">常见问题</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="footer-title" data-i18n="footer.contact">联系我们</h3>
+        <h3 class="footer-title">联系我们</h3>
         <ul class="footer-list">
           <li><a href="mailto:jason2023zhang@gmail.com">jason2023zhang@gmail.com</a></li>
-          <li><span data-i18n="footer.wechat">微信：winnielove2020</span></li>
-          <li><span data-i18n="footer.hours">工作时间：9:00~23:00</span></li>
+          <li><span>微信：winnielove2020</span></li>
+          <li><span>工作时间：9:00~23:00</span></li>
+        </ul>
+        <h3 class="footer-title" style="margin-top:16px">相关产品</h3>
+        <ul class="footer-list">
+          <li><a href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener">AI Token Hub · 企业算力总闸</a></li>
+          <li><a href="https://cc.zaokit.com" target="_blank" rel="noopener">Zaokit CC · Claude API 服务</a></li>
+          <li><a href="https://zaokit.app" target="_blank" rel="noopener">Zaokit · AI 创作入口</a></li>
         </ul>
       </div>
     </div>
     <p class="copyright">© <span id="year"></span> Zaokit AI. All rights reserved.</p>
   </footer>
 
-  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
