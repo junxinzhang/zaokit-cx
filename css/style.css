@@ -97,6 +97,32 @@ img{max-width:100%;display:block}
 }
 .nav-links .nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(240,168,48,0.35)}
 
+/* ── Language Toggle ── */
+.lang-toggle{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:34px;padding:6px 14px;border-radius:999px;
+  font-weight:700;font-size:.82rem;letter-spacing:.03em;
+  color:var(--text-muted);background:var(--surface);
+  border:1px solid var(--border);cursor:pointer;
+  transition:color .2s,background .2s,border-color .2s;
+}
+.lang-toggle:hover{color:var(--primary-strong);background:rgba(240,168,48,0.10);border-color:rgba(240,168,48,0.25)}
+
+/* ── Language Switcher ── */
+.lang-switch{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:32px;padding:5px 14px;border-radius:999px;
+  font-weight:700;font-size:.82rem;letter-spacing:.03em;
+  color:var(--text-muted);background:var(--surface);
+  border:1px solid var(--border);cursor:pointer;
+  transition:color .2s,background .2s,border-color .2s;
+  font-family:var(--font);
+}
+.lang-switch:hover{
+  color:var(--primary-strong);background:rgba(240,168,48,0.10);
+  border-color:rgba(240,168,48,0.25);
+}
+
 /* ── Hero ── */
 .hero{padding:110px 0 90px;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px}

@@ -1,4 +1,27 @@
 (() => {
+  /* ── i18n init ── */
+  I18N.init();
+  updateBannerDesc();
+
+  function updateBannerDesc() {
+    const el = document.getElementById('why-banner-desc');
+    if (!el) return;
+    const desc = I18N.t('why.banner.desc');
+    const suffix = I18N.t('why.banner.suffix');
+    el.innerHTML = desc
+      + '<a href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener" style="color:var(--primary-strong)">tokenhub.zaokit.ai</a>、'
+      + '<a href="https://cc.zaokit.com" target="_blank" rel="noopener" style="color:var(--primary-strong)">cc.zaokit.com</a>、'
+      + '<a href="https://cx.zaokit.com" target="_blank" rel="noopener" style="color:var(--primary-strong)">cx.zaokit.com</a>'
+      + suffix;
+  }
+
+  // Expose for lang switch
+  const origSwitch = I18N.switchLang;
+  I18N.switchLang = () => {
+    origSwitch();
+    updateBannerDesc();
+  };
+
   const body = document.body;
   const header = document.querySelector('.site-header');
   const menuToggle = document.querySelector('.menu-toggle');
@@ -46,6 +69,14 @@
       if (window.innerWidth <= 860) closeMenu();
     });
   });
+
+  /* ── Language Toggle ── */
+  const langToggle = document.getElementById('lang-toggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      if (typeof I18N !== 'undefined') I18N.toggleLang();
+    });
+  }
 
   /* ── FAQ Accordion ── */
   const faqButtons = Array.from(document.querySelectorAll('.faq-question'));
@@ -265,9 +296,10 @@ function copyText(type) {
 
 function copyAndSend(type) {
   copyText(type);
-  // Also try to open mailto
+  // Also try to open mailto with i18n subject
   setTimeout(() => {
-    window.location.href = 'mailto:jason2023zhang@gmail.com?subject=Zaokit AI 咨询';
+    const subject = encodeURIComponent(I18N.getMailSubject());
+    window.location.href = 'mailto:jason2023zhang@gmail.com?subject=' + subject;
   }, 300);
 }
 
